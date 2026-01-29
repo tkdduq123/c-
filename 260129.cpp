@@ -78,14 +78,11 @@ int main()
 	while (1) {
 		printf("알파벳을 입력해주세요(다른 것 입력시 다시 입력):");
 		scanf("%c", &alphabet);
-		if (alphabet >= 'a' && alphabet <= 'z'); {
-			pirntf("소문자를 입력하셨습니다.\n");
-		}
+		if (alphabet >= 'a' && alphabet <= 'z')
+		{printf("소문자를 입력하셨습니다.\n");}
 		else if (alphabet >= 'A' && alphabet <= 'Z')
-		{
-			printf("대문자를 입력하셨습니다.\n");
-		}
-		else { contine; }
+		{printf("대문자를 입력하셨습니다.\n");}
+		else { continue; }
 		printf("입력한 값:%c\n", alphabet);
 	}
 }
